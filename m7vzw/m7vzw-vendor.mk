@@ -19,9 +19,9 @@ PRODUCT_COPY_FILES += \
     vendor/htc/m7vzw/proprietary/etc/firmware/BCM4335B0_002.001.006.0296.0299.hcd:system/etc/firmware/BCM4335B0_002.001.006.0296.0299.hcd
 PRODUCT_COPY_FILES += \
     vendor/htc/m7vzw/proprietary/bin/efsks:system/bin/efsks \
-    vendor/htc/m7vzw/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/htc/m7vzw/proprietary/bin/netmgrd:system/vendor/bin/netmgrd \
     vendor/htc/m7vzw/proprietary/bin/qcks:system/bin/qcks \
-    vendor/htc/m7vzw/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/htc/m7vzw/proprietary/bin/qmuxd:system/vendor/bin/qmuxd \
     vendor/htc/m7vzw/proprietary/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/htc/m7vzw/proprietary/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/htc/m7vzw/proprietary/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
