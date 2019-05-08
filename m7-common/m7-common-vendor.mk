@@ -20,17 +20,17 @@ PRODUCT_COPY_FILES += \
     vendor/htc/m7-common/proprietary/bin/cir_fw_update:system/bin/cir_fw_update \
     vendor/htc/m7-common/proprietary/bin/ks:system/bin/ks \
     vendor/htc/m7-common/proprietary/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon \
-    vendor/htc/m7-common/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/htc/m7-common/proprietary/bin/mpdecision:system/vendor/bin/mpdecision \
     vendor/htc/m7-common/proprietary/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/htc/m7-common/proprietary/bin/radish:system/bin/radish \
+    vendor/htc/m7-common/proprietary/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/htc/m7-common/proprietary/bin/thermald:system/bin/thermald \
-    vendor/htc/m7-common/proprietary/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/htc/m7-common/proprietary/etc/agps_rm:system/etc/agps_rm \
     vendor/htc/m7-common/proprietary/etc/cir.img:system/etc/cir.img \
     vendor/htc/m7-common/proprietary/etc/firmware/ILP0100_IPM_Code_out.bin:system/etc/firmware/ILP0100_IPM_Code_out.bin \
     vendor/htc/m7-common/proprietary/etc/firmware/ILP0100_IPM_Data_out.bin:system/etc/firmware/ILP0100_IPM_Data_out.bin \
-    vendor/htc/m7-common/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-    vendor/htc/m7-common/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/htc/m7-common/proprietary/etc/firmware/a300_pfp.fw:system/vendor/firmware/a300_pfp.fw \
+    vendor/htc/m7-common/proprietary/etc/firmware/a300_pm4.fw:system/vendor/firmware/a300_pm4.fw \
     vendor/htc/m7-common/proprietary/etc/firmware/fw_bcm4335_apsta_b0.bin:system/etc/firmware/fw_bcm4335_apsta_b0.bin \
     vendor/htc/m7-common/proprietary/etc/firmware/fw_bcm4335_b0.bin:system/etc/firmware/fw_bcm4335_b0.bin \
     vendor/htc/m7-common/proprietary/etc/firmware/fw_bcm4335_p2p_b0.bin:system/etc/firmware/fw_bcm4335_p2p_b0.bin \
@@ -118,7 +118,8 @@ PRODUCT_COPY_FILES += \
     vendor/htc/m7-common/proprietary/lib/hw/camera.vendor.msm8960.so:system/vendor/lib/hw/camera.vendor.msm8960.so \
     vendor/htc/m7-common/proprietary/lib/hw/consumerir.msm8960.so:system/vendor/lib/hw/consumerir.msm8960.so \
     vendor/htc/m7-common/proprietary/lib/hw/sensors.m7.so:system/vendor/lib/sensors.m7.so \
-    vendor/htc/m7-common/proprietary/lib/libqti-perfd-client.so:system/lib/libqti-perfd-client.so \
+    vendor/htc/m7-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/htc/m7-common/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/htc/m7-common/proprietary/lib/libskia.so:system/lib/libskia.so \
     vendor/htc/m7-common/proprietary/lib/libBeautyChat.so:system/vendor/lib/libBeautyChat.so \
     vendor/htc/m7-common/proprietary/lib/libHTC_DIS.so:system/vendor/lib/libHTC_DIS.so \
@@ -221,7 +222,6 @@ PRODUCT_COPY_FILES += \
     vendor/htc/m7-common/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/htc/m7-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/htc/m7-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-    vendor/htc/m7-common/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/htc/m7-common/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/htc/m7-common/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/htc/m7-common/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
@@ -239,10 +239,7 @@ PRODUCT_COPY_FILES += \
      vendor/htc/m7-common/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/htc/m7-common/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
     vendor/htc/m7-common/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
-    vendor/htc/m7-common/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
-    vendor/htc/m7-common/proprietary/lib/libhtcirinterface_jni.so:system/lib/libhtcirinterface_jni.so
+    vendor/htc/m7-common/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so
 
 PRODUCT_PACKAGES += \
-    CIRModule \
-    TimeService \
-    htcirlibs
+    TimeService
